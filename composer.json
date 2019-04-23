@@ -1,5 +1,5 @@
 {
-	"name": "kdyby/redis",
+	"name": "peldax/redis",
 	"type": "library",
 	"description": "Redis storage for Nette Framework",
 	"keywords": ["nette", "kdyby", "redis", "client", "cache"],
@@ -12,44 +12,18 @@
 			"email": "filip@prochazka.su"
 		}
 	],
-	"support": {
-		"email": "filip@prochazka.su",
-		"issues": "https://github.com/kdyby/redis/issues"
-	},
 	"require": {
-		"php": ">=7.0",
-		"nette/di": "~2.4",
-		"nette/caching": "~2.5",
-		"nette/http": "~2.4",
-		"nette/utils": "~2.4"
+		"php": ">=7.2",
+		"nette/di": "^3.0",
+		"nette/caching": "^3.0",
+		"nette/http": "^3.0",
+		"nette/utils": "^3.0"
 	},
 	"suggest": {
 		"ext-redis": "The php redis extension https://github.com/nicolasff/phpredis/ is required for connecting to redis server"
 	},
 	"require-dev": {
-		"nette/application": "~2.4",
-		"nette/bootstrap": "~2.4",
-		"nette/caching": "~2.5",
-		"nette/component-model": "~2.3",
-		"nette/database": "~2.4",
-		"nette/deprecated": "~2.4",
-		"nette/di": "~2.4",
-		"nette/finder": "~2.4",
-		"nette/forms": "~2.4",
-		"nette/http": "~2.4",
-		"nette/mail": "~2.4",
-		"nette/neon": "~2.4",
-		"nette/php-generator": "~2.6",
-		"nette/reflection": "~2.4",
-		"nette/robot-loader": "~2.4",
-		"nette/safe-stream": "~2.3",
-		"nette/security": "~2.4",
-		"nette/tokenizer": "~2.3",
-		"nette/utils": "~2.4",
-		"latte/latte": "~2.4",
-		"tracy/tracy": "~2.4",
-
-		"nette/tester": "~1.7"
+		"nette/tester": "^2.0"
 	},
 	"autoload": {
 		"psr-0": {
@@ -61,10 +35,5 @@
 	},
 	"autoload-dev": {
 		"classmap": ["tests/KdybyTests/Redis"]
-	},
-	"extra": {
-		"branch-alias": {
-			"dev-master": "4.0-dev"
-		}
 	}
 }

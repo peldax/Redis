@@ -14,26 +14,18 @@
 	],
 	"require": {
 		"php": ">=7.2",
+                "ext-redis": "*",
 		"nette/di": "^3.0",
 		"nette/caching": "^3.0",
 		"nette/http": "^3.0",
 		"nette/utils": "^3.0"
 	},
-	"suggest": {
-		"ext-redis": "The php redis extension https://github.com/nicolasff/phpredis/ is required for connecting to redis server"
-	},
 	"require-dev": {
 		"nette/tester": "^2.0"
 	},
 	"autoload": {
-		"psr-0": {
-			"Kdyby\\Redis\\": "src/"
-		},
-		"classmap": [
-			"src/Kdyby/Redis/exceptions.php"
-		]
-	},
-	"autoload-dev": {
-		"classmap": ["tests/KdybyTests/Redis"]
+		"psr-4": {
+			"Kdyby\\Redis\\": "src/Kdyby/Redis"
+		}
 	}
 }
